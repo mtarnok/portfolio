@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio website</title>
+</head>
+<body>
+    <h1>Portfolio</h1>
+    <div class="pages">
+        <a href="index.html" id="portfolioBtn">Portfolio</a>
+        <a href="rolam.html" id="rolamBtn">Rolam</a>
+        <a href="contact.html" id="contactBtn">Contact</a>
+    </div>
+
+    <img src="pictures/1.jpg" alt="">
+    <h3 class="title">This would be the artwork title</h3>
+
+    <img src="pictures/2.jpg" alt="">
+    <h3 class="title">This would be the artwork title</h3>
+
+    <img src="pictures/3.jpg" alt="">
+    <h3 class="title">This would be the artwork title</h3>
+
+    <img src="pictures/4.jpg" alt="">
+    <h3 class="title">This would be the artwork title</h3>
+
+    <img src="pictures/5.jpg" alt="">
+    <h3 class="title">This would be the artwork title</h3>
+
+    <img src="pictures/6.jpg" alt="">
+    <h3 class="title">This would be the artwork title</h3>
+
+</body>
+<style>
+    body {
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    h1, h3 {
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    h1 {
+        font-size: 3rem;
+        margin-top: 5rem;
+    }
+
+    img {
+        width: 60%;
+    }
+
+    .pages {
+        background-color: rgb(34, 34, 34);
+        padding: .5rem 1rem .5rem 1rem;
+        margin-bottom: 5rem;
+    }
+
+    .pages > a {
+        font-family: Arial, Helvetica, sans-serif;
+        text-decoration: none;
+        color: white;
+        font-size: 1.5rem;
+        margin: 1rem;
+        padding: .5rem;
+    }
+
+    .title {
+        margin-bottom: 5rem;
+    }
+
+</style>
+<script>
+    const portfolio_btn = document.getElementById("portfolioBtn");
+    const rolam_btn = document.getElementById("rolamBtn");
+    const contact_btn = document.getElementById("contactBtn");
+
+    if (window.location.pathname.endsWith('index.html')) {
+        portfolio_btn.style.backgroundColor = "rgb(78, 78, 78)";
+    } 
+    if (window.location.pathname.endsWith('rolam.html')) {
+        rolam_btn.style.backgroundColor = "rgb(78, 78, 78)";
+    }
+    if (window.location.pathname.endsWith('contact.html')) {
+        contact_btn.style.backgroundColor = "rgb(78, 78, 78)";
+    } 
+
+</script>
+</html>
